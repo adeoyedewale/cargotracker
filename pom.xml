@@ -26,6 +26,10 @@
             <id>primefaces</id>
             <url>https://repository.primefaces.org</url>
         </repository>
+        <repository>
+            <id>eclipselink.repository</id>
+            <url>https://repo.eclipse.org/content/repositories/releases/</url>
+       </repository>
     </repositories>
 
     <dependencyManagement>
