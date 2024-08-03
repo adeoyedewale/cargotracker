@@ -1,0 +1,55 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+    <mirrors>
+        <!-- Mirror to redirect requests to HTTPS -->
+        <mirror>
+            <id>primefaces-mirror</id>
+            <mirrorOf>primefaces</mirrorOf>
+            <url>https://repository.primefaces.org</url>
+            <mirrorOfLayouts>default</mirrorOfLayouts>
+        </mirror>
+        <mirror>
+            <id>eclipselink-mirror</id>
+            <mirrorOf>eclipselink.repository</mirrorOf>
+            <url>https://download.eclipse.org/rt/eclipselink/maven.repo</url>
+            <mirrorOfLayouts>default</mirrorOfLayouts>
+        </mirror>
+    </mirrors>
+
+    <profiles>
+        <profile>
+            <id>default-profile</id>
+            <repositories>
+                <!-- Repository for PrimeFaces -->
+                <repository>
+                    <id>primefaces</id>
+                    <url>https://repository.primefaces.org</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+                <!-- Repository for EclipseLink -->
+                <repository>
+                    <id>eclipselink.repository</id>
+                    <url>https://download.eclipse.org/rt/eclipselink/maven.repo</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+        </profile>
+    </profiles>
+
+    <activeProfiles>
+        <!-- Make the default profile active -->
+        <activeProfile>default-profile</activeProfile>
+    </activeProfiles>
+</settings>
