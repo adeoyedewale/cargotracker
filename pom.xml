@@ -24,7 +24,7 @@
     <repositories>
         <repository>
             <id>primefaces</id>
-            <url>http://repository.primefaces.org</url>
+            <url>https://repository.primefaces.org</url>
         </repository>
     </repositories>
 
