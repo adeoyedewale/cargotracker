@@ -168,7 +168,7 @@
                             <container>
                                 <containerId>glassfish4x</containerId>
                                 <zipUrlInstaller>
-                                    <url>http://download.java.net/glassfish/4.1/release/glassfish-4.1.zip</url>
+                                    <url>https://download.java.net/glassfish/4.1/release/glassfish-4.1.zip</url>
                                 </zipUrlInstaller>
                             </container>
                             <properties>
