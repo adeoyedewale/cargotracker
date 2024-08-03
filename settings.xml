@@ -5,6 +5,11 @@
     <mirrors>
         <!-- Mirror to redirect requests to HTTPS -->
         <mirror>
+            <id>central</id>
+            <mirrorOf>central</mirrorOf>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </mirror>
+        <mirror>
             <id>primefaces-mirror</id>
             <mirrorOf>primefaces</mirrorOf>
             <url>https://repository.primefaces.org</url>
